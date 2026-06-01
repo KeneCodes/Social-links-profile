@@ -1,0 +1,121 @@
+:root {
+  --primary-color-body: rgb(20, 20, 20);
+  --primary-color-container: rgb(31, 31, 31);
+  --seconnday-color: rgb(51, 51, 51);
+  --highlight-color: rgb(197, 248, 42);
+  --text-main: rgb(255, 255, 255);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.inter-uniquifier {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400, 600, 700;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--primary-color-body);
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "inter", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 375px;
+  background-color: var(--primary-color-container);
+  padding: 24px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  display: inline;
+}
+
+h1 {
+  font-size: 27px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.location {
+  color: var(--highlight-color);
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.summary {
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.buttons {
+  display: grid;
+  /* grid-template-rows: max-content; */
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-link {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--seconnday-color);
+  color: var(--text-main);
+  /* CORRECTION */
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.btn-link:hover,
+.btn-link:focus-visible {
+  background-color: var(--highlight-color);
+  color: var(--primary-color-body);
+}
+
+.btn-link:focus-visible {
+  box-shadow: 0 0 0 3px var (--text-main);
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: rgb(62, 82, 163);
+  text-decoration: none;
+}
